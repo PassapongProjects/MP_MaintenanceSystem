@@ -1,0 +1,110 @@
+.container {
+    margin-top: 25px;
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.group-header {
+    margin-top: 20px;
+}
+.data-table {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px; /* More rounded border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; /* Remove default table border */
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align:center;
+    vertical-align:middle;
+    border: none; /* Remove default cell borders */
+    /* width: fit-content; */
+    text-align: center;
+    font-size: medium;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    
+}
+
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    width: 30%;
+}
+
+/* Specific Styles for PartReq-cont */
+#PartReq-cont {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px; /* More rounded border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x:scroll;
+    width: 100%;
+    
+
+}
+#PartReq-cont:hover td:nth-child(2), #PartReq-cont:hover th:nth-child(2){
+    /* position: absolute; */
+
+    white-space: nowrap;
+    
+}
+#PartReq-cont:hover td:nth-child(4), #PartReq-cont:hover th:nth-child(4){
+    /* position: absolute; */
+    white-space: nowrap;
+    
+}
+#PartReq-cont:hover td:nth-child(5), #PartReq-cont:hover th:nth-child(5){
+    /* position: absolute; */
+    white-space: nowrap;
+    
+}
+#PartReq-cont:hover td:nth-child(11), #PartReq-cont:hover th:nth-child(11){
+    /* position: absolute; */
+    white-space: nowrap;
+    
+}
+#PartReq-cont:hover {
+    /* position: absolute; */
+    width: fit-content;
+    overflow-x: visible;
+    
+}
+#PartReq-cont td ,#PartReq-cont th{
+    /* position: absolute; */
+    border-bottom: 1px solid #646262;
+    
+}
+
+
+
+/* Cell Hover Effect */
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s;
+}
+
+.row {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+}
+.side-div {
+    width: 100%;
+}
+
+

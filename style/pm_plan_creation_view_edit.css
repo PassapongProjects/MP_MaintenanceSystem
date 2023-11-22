@@ -1,0 +1,326 @@
+#pg-container{
+    padding: 25px 50px 25px 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.group-container {
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#header-container{
+    width: 100%;
+    max-width: 600px;
+}
+#items-container{
+    width:100%;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+#pm-items-table{
+    width: 100%;
+
+}
+
+#pm-items-table tbody td{
+    text-align: center;
+    width: fit-content;
+}
+
+#pm-items-table thead{
+    background-color: #f8f9fa;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="number"]
+{
+    width: 20%;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: left;
+    box-sizing: border-box; 
+    resize: none;
+}
+
+#interval-unit-select {
+    width: 15%;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    appearance: none;
+}
+
+br {
+    margin-bottom: 10px;
+}
+
+#pg-container ul {
+    list-style-type: none;
+    padding: 2px;
+    margin: 0px 10px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    position: relative;
+    float: right;
+
+}
+
+#pg-container li {
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #f5f5f5;
+    width: fit-content; 
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+#add-new-item-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#add-new-item-btn:hover {
+    background-color: #0056b3;
+}
+
+.remove-item-btn, .remove-part-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.remove-item-btn:hover, .remove-part-btn:hover {
+    background-color: #c82333;
+    color: #fff;
+}
+.remove-part-btn{
+    padding: 3px 5px;
+}
+#Plan-Save-btn, #Plan-Update-btn{
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    float: right;
+    position: relative;
+}
+
+#Plan-Save-btn:hover, #Plan-Update-btn:hover {
+    background-color: #218838; 
+}
+
+.spare-part-requisition-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+.table thead {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+}
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+}
+
+#fetched-part-cont{
+    max-height: 500px; 
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+.toggle-button {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.part_req_table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.part_req_table th {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.part_req_table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.part_req_table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.parts-used-container {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#searchBox {
+    width: 35%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+#mr-detail-container {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#added-parts-table tbody td{
+    text-align: center;
+}
+
+#header-label-cont{
+    text-align: center;
+}
+#topic-label{
+    text-transform: uppercase;
+    width: auto;
+}
+#Plan-Edit-btn {
+    background-color: orange; 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    float: right;
+    position: relative;
+}
+
+#Plan-Edit-btn:hover {
+    background-color: darkorange;
+}
+#plan-selection-cont{
+    margin: 10px 0px;
+    text-align: center;
+}
+#plan-selection-cont select{
+    margin-right: 5px;
+    width: fit-content;
+}
+#view-edit-page-but {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: orange; /* Change this to your desired color */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    float: right;
+    right: 15%;
+}
+
+#view-edit-page-but:hover {
+    background-color: #0056b3; /* Change this to your desired hover color */
+}
+#plan-detail-text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; /* Center horizontally with margin */
+    text-align: center;
+    border: 1px solid #ccc; /* Border color */
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 5px; /* Add rounded corners */
+    width: 50%; /* Set the width to 50% */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#plan-detail-text-cont span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; /* Set your desired text color */
+    font-weight: bold;
+}
+
+

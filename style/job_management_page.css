@@ -1,0 +1,259 @@
+.card-text.topic-label {
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+}
+
+/* Add custom CSS for the status filter bar */
+.status-filter-btn {
+    background-color: #f8f9fa; /* Light gray */
+    color: #000; /* Black text */
+}
+
+.status-filter-btn.active {
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White text */
+}
+
+/* Custom CSS for the maintenance form structure */
+.maintenance-form-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    position:relative;
+}
+
+.maintenance-form-container h5 {
+    font-size: 20px;
+}
+
+.maintenance-form-container p {
+    margin-bottom: 10px;
+}
+
+.maintenance-form-container label {
+    font-weight: bold;
+}
+
+/* Custom CSS for the spare part requisition field */
+.spare-part-requisition-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.spare-part-requisition-container h5 {
+    font-size: 18px;
+}
+
+.spare-part-requisition-container .form-group {
+    margin-bottom: 10px;
+}
+
+/* Custom CSS for the parts used for the job section */
+.parts-used-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 35px;
+    border-radius: 5px;
+    position:relative;
+}
+
+.parts-used-container h5 {
+    font-size: 18px;
+}
+
+.parts-used-container .part-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f8f9fa;
+}
+.check-group {
+flex: 1;
+border: 1px solid #ccc;
+padding: 20px;
+border-radius: 5px;
+margin-right: 10px;
+margin-bottom: 0px;
+position:relative;
+}
+.spare-part-requisition-container{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-container {
+    margin-top: 5px;
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.form-container label {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.form-control-plaintext {
+    background-color: #f0f0f0;
+    border: none;
+    box-shadow: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.eng_inform_container {
+display: flex;
+border: 2px solid #ccc;
+padding: 20px;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+
+.MT-Description-container {
+flex: 2;
+border: 1px solid #ccc;
+padding: 20px;
+border-radius: 5px;
+}
+
+.option-checkbox {
+margin-right: 10px;
+}
+
+.toggle-button {
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+label {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+resize: vertical;
+}
+#job_done {
+position:absolute;
+bottom: 20px;
+right: 50px;
+background-color: green;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#job_done:hover {
+background-color: darkgreen;
+}
+.form-check{
+margin-bottom: 5px;
+
+}
+#done_engineer{
+position:absolute;
+bottom: 20px;
+right: 20px;
+padding: 10px 20px;
+border-radius: 5px;
+background-color: #c6c6c6;
+}
+#confirm-req-container  {
+position: relative;
+
+}
+#Requist-confirm-but{
+background-color: #005C85;
+color: #fff;
+border: none;
+padding: 8px 16px;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+
+
+}
+#fetched-part-cont{
+max-height: 500px; /* Adjust this height as needed */
+overflow-y: scroll;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-top: 20px;
+
+}
+.table thead {
+position: sticky;
+top: 0;
+background-color: #f8f9fa;
+}
+.table tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* Style for the table rows */
+
+/* Style for the table cells */
+.table tbody td {
+padding: 10px;
+text-align: left;
+vertical-align: middle;
+border-bottom: 1px solid #ccc;
+}
+#mr_code_label{
+position:absolute;
+top: 4px;
+}
+
+#asg_btn {
+    background-color: #ffc23d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#asg_select {
+    -webkit-appearance: none; /* Remove default styles on Safari */
+    -moz-appearance: none; /* Remove default styles on Firefox */
+    appearance: none; /* Remove default styles on other browsers */
+    padding: 10px;
+    border: 2px solid #365366; /* Border color */
+    border-radius: 5px;
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer; /* Add a pointer cursor on hover */
+    text-align: center;
+    margin-bottom: 15px;
+    text-overflow:ellipsis;
+  }
+
+  .pending-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 100%;
+    margin: 50px auto;
+  }

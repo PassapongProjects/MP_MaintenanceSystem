@@ -1,0 +1,156 @@
+#pg-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    gap: 30px;
+    background-color: #092f42;
+    min-height: 100vh;
+    margin-bottom: 10px;
+}
+
+.header-label {
+    text-decoration: underline;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+}
+.section-div{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000;
+    border-radius: 5px;
+    background-color: #fdfcf4;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    gap:15px;
+}
+
+.section-topic-label {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    
+}
+.sub-section-topic-label label{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.sub-section-topic-label{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+
+
+.inline-label-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+.inline-topic-label {
+    margin: 0;
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.inline-value-label {
+    margin: 0;
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+}
+
+.side-div-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-items: flex-start;
+    margin: 15px 0;
+    gap: 5px;
+}
+
+
+.side-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid #092f42;
+    padding: 10px 10px 25px 10px;
+    border-radius: 3px;
+}
+
+.sub1-section-div {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.div-label-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:10px
+}
+
+.table-cont {
+    width: 100%;
+    overflow-x: scroll;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0;
+}
+.table-cont table {
+    width: 100%;
+}
+
+.table-cont table tr {
+    border-bottom: 1px solid #c7c7c5;
+}
+
+.table-cont table thead {
+    text-align: left;
+    font-size: 18px;
+   
+}
+.table-cont table thead th{
+   padding-left: 5px;
+   
+}
+
+.table-cont table tbody td {
+    text-align: left;
+    min-width: fit-content;
+    padding: 5px;
+
+}
+.text-scroll-container {
+    max-width: 20ch;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-scroll-div {
+    white-space: nowrap;
+    border-bottom: 1px solid #092f42;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text-scroll-div:hover {
+    overflow-x: scroll;
+    text-overflow: clip;
+}

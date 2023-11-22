@@ -1,0 +1,1232 @@
+#pg-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 0 0 2% 0;
+    height: 100%;
+    justify-content: stretch;
+    background-color: #282a33;
+    overflow-y: scroll;
+    border: 3px solid #000;
+    min-height: 95vh;
+}
+.show-div {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.hide-div {
+    opacity: 0;
+    transition: opacity 0s;
+}
+
+.header-label-cont {
+    text-align: center;
+    padding: 5px;
+    margin: auto 0;
+    font-size: x-large;
+    font-weight: bold;
+    border: 3px solid #101417;
+    color: #fff;
+    background-color: #092f42;
+
+}
+
+.sidebar * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    /* position: relative; */
+    left: -250px;
+    width: 270px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+    overflow-y: scroll;
+    border: 2px solid #000000;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #063146;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+.sidebar {
+    left: 0;
+}
+
+#main-section {
+    width: 100%;
+    padding: 10px 5%;
+    /* border: 2px solid #042331; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: #282a33;
+    gap: 15px;
+
+
+}
+
+/* Small popup */
+.small-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+
+}
+
+/* CSS for the popup content */
+.small-popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #000;
+    margin: 10px;
+    height: fit-content;
+}
+
+/* Style for the heading */
+.small-popup-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style for the label */
+.small-popup-content label {
+    font-size: 18px;
+    color: #666;
+    margin-right: 10px;
+}
+
+/* Style for the input */
+.small-popup-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for the button */
+.small-popup-content button#small-popup-confirm-button {
+    background-color: #ff4940;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.small-popup-content button#small-popup-confirm-button:hover {
+    background-color: #9d1c1c;
+}
+
+
+
+/* CSS for the close button */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.5s;
+}
+
+.popup-close:hover {
+    transform: scale(2);
+    color: #ff0000;
+}
+
+/* End small popup */
+.popUpForm {
+    display: none;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1001;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 3px solid #000;
+    width: 90%;
+    margin: 5vh 0;
+    max-height: 95vh;
+    overflow-y: scroll;
+
+}
+
+.popUpForm-content {
+    text-align: center;
+}
+
+/* Not actually close-btn this is the div containing close btn */
+.close-btn {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    width: 100%;
+    height: fit-content;
+    vertical-align: center;
+}
+
+.close-btn label {
+    margin: 0;
+}
+
+#closepopUp {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#closepopUp:hover {
+    transform: scale(2);
+    color: #ff0000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#form-context {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+}
+
+
+/* ELEMENTS' CONTENTS */
+
+/* Styling for the blister card */
+.blister-card-detail-cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2px;
+    margin-bottom: 20px;
+
+
+}
+
+.blister-card-detail-column {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+}
+
+
+.blister-general-column {
+    width: 45%;
+}
+
+.blister-time-column {
+    width: 40%;
+}
+
+.blister-button-column {
+    width: 15%;
+    padding: 0;
+    overflow: visible;
+}
+
+.oper-but-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    flex: 1;
+    gap: 5px;
+}
+
+.oper-but-cont button {
+    width: 100%;
+    flex: 1;
+
+}
+
+
+.blister-start-button {
+    background-color: #7aff51;
+}
+
+.blister-start-button:hover {
+    background-color: #56b03a;
+    /* Lighter shade of yellow on hover */
+}
+.blister-cancel-setup-button {
+    background-color: #efbfbd;
+}
+.blister-cancel-setup-button:hover{
+    background-color: #f5b8b8;
+
+}
+.blister-setup-button {
+    background-color: #ffae51;
+}
+
+.blister-setup-button:hover {
+    background-color: #c78b0a;
+    /* Lighter shade of yellow on hover */
+}
+
+.blister-pause-button {
+    background-color: #ffdc51;
+}
+
+.blister-pause-button:hover {
+    background-color: #987a00;
+    /* Lighter shade of yellow on hover */
+}
+
+.blister-done-button {
+    background-color: #39e539;
+}
+
+.blister-done-button:hover {
+    background-color: #2cad2c;
+}
+
+.blister-continue-button {
+    background-color: #91e7ff;
+}
+
+.blister-continue-button:hover {
+    background-color: #6096a7;
+}
+
+.blister-CPchange-button {
+    background-color: #e4bb55;
+}
+.blister-CPchange-button:hover {
+    background-color: #e7811b;
+}
+
+
+.blister-card-element {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #fdfcf4;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #194860;
+    color: #fff;
+    border: 3px solid #333;
+    border-radius: 5px;
+}
+
+.blister-card-element-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.blister-card-element-value {
+    margin-bottom: 5px;
+    margin-left: 4ch;
+}
+
+.detail-button {
+    background-color: #2b678f;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    padding: 10px 20px;
+    /* Adjust padding to your preferred size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    /* Add a smooth scale transition on hover */
+    height: 100%;
+    width: 100%;
+    font-size: large;
+}
+
+.detail-button:hover {
+    background-color: #328dc9;
+    transform: scale(1.05);
+    /* Scale the button on hover */
+}
+
+
+
+/* Operation-Detail */
+.blister_card_operation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fdfcf4;
+
+}
+
+
+.operation-detail-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+
+}
+
+.cp_selects_cont,
+.cp_selects_main_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    overflow-x: hidden;
+    gap: 10px;
+}
+
+.detail-label-cont {
+    width: 10%;
+    text-align: right;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.detail-label-cont label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.middle-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.middle-div label {
+    font-weight: bold;
+    margin: auto 0;
+}
+
+
+.cp_selects_cont select,
+.cp_selects_main_cont select ,.cpchange-formation-select{
+    flex: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cpchange-formation-select {
+    margin-bottom: 15px;
+}
+.cp_selects_cont select:focus,
+.cp_selects_main_cont select:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.operation-detail-button-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Common styles for buttons with class "operation-button" */
+.operation-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+    font-weight: bold;
+}
+
+/* Style for "confirm-button" */
+.operation-button.confirm-button, .operation-button.cpchange-confirm-button {
+    background-color: #4caf50;
+    /* Green background color */
+    color: white;
+    /* White text color */
+}
+
+/* Style for "cancel-button" */
+.operation-button.cancel-button {
+    background-color: #f44336;
+    /* Red background color */
+    color: white;
+    /* White text color */
+}
+
+/* Hover effect for both buttons */
+.operation-button:hover {
+    transform: scale(1.05);
+}
+
+button:disabled,
+select.onlyOption {
+    background-color: #efefef;
+}
+
+/* general-detail */
+.general_detail_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.general-detail-row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.general-column-inside {
+    justify-content: space-evenly;
+    background-color: #dcdcdc;
+    border: 2px solid #000;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.column-label-cont label {
+    font-weight: bold;
+    margin: 0 0;
+    padding: 5px;
+}
+
+.detail-label-cont {
+    width: 40%;
+    text-align: center;
+}
+
+.general-detail-header-label {
+    font-weight: bold;
+}
+
+.insided-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.lotDone-small-popup-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 90vh;
+    height: 100%;
+    border: 2px solid #000;
+    overflow-y: scroll;
+    padding: 20px;
+    gap: 10px;
+}
+
+.lotDone-small-popup-cont .header-label {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.small-popup-lot-done-detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.moldDone-radio-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.moldDone-radio-cont label {
+    margin: auto 0;
+}
+
+.small-popup-lot-done-detail-row input[type=text] {
+    border: 2px solid #ff0000;
+    margin: 20px 0;
+}
+
+#main-med-history {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.sub-operation-div {
+    border: 3px solid #000;
+    border-radius: 5px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#production-table-cont {
+    min-height: 150px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+
+.text-scroll-container {
+    max-width: 100ch;
+    overflow: hidden;
+    position: relative;
+}
+.text-scroll-div {
+    white-space: nowrap;
+    border-bottom: 1px solid #092f42;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+.text-scroll-div:hover {
+    overflow-x: scroll;
+    text-overflow: clip;
+}
+
+.floating-text {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1003;
+}
+
+.date-picker-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+    text-align: center;
+
+
+}
+
+.date-picker-cont span {
+    width: 5ch;
+    padding: auto 0;
+    margin: auto 0;
+}
+
+.flatpickr-cont {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.small-label {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 5px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px 0;
+}
+
+.text-filter-input-cont {
+    margin: 0;
+    padding: 0;
+}
+
+.text-filter-input {
+    width: calc(100% - 40px);
+    padding: 5px 0;
+    margin: 20px;
+    text-align: center;
+}
+
+.text-filter-input:disabled {
+    background-color: #b1b1b1;
+}
+
+#production-table-cont {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+#production-table {
+    width: 100%;
+
+}
+
+#production-table tr {
+    margin: 5px 0 0 0;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 5px 0;
+}
+
+#production-table thead {
+    position: sticky;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 2px solid #dcdcdc;
+    height: 50px;
+}
+
+#production-table tbody {
+    text-align: center;
+    font-size: 12px;
+
+}
+
+
+
+#main-mold_alert {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.filter-section-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-section-bar-cont {
+    align-self: flex-end;
+    padding-right: 10px;
+
+}
+
+.scroll-table {
+    max-height: 500px;
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+#oneM-table-cont {
+    max-height: 300px;
+}
+
+.cp-alert-topic-label {
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0;
+    text-decoration: underline;
+}
+
+/* Apply styles to the table */
+.small-detail-table {
+    width: 100%;
+    /* Take 100% width */
+    border-collapse: collapse;
+    /* Collapse borders to remove spacing */
+    border-spacing: 0;
+    /* Remove spacing between cells */
+    font-size: 12px;
+    /* Set font size for the table body */
+
+}
+
+/* Apply styles to table header */
+.small-detail-table th {
+    background-color: #cfcece;
+    /* Header background color */
+    position: sticky;
+    top: 0;
+    /* Make the header stick to the top when scrolling */
+    z-index: 1;
+    /* Place header above other elements */
+    font-weight: bold;
+    /* Bold header text */
+    padding: 8px;
+    /* Add padding to header cells */
+    text-align: left;
+    /* Left-align header text */
+    font-size: 14px;
+}
+
+/* Apply styles to table body */
+.small-detail-table td {
+    padding: 8px;
+    /* Add padding to body cells */
+    border-bottom: 1px solid #ddd;
+    /* Add bottom border to separate rows */
+}
+
+/* Apply alternate row background color */
+.small-detail-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Apply hover effect on rows */
+.small-detail-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+#oneM-table th {
+    background-color: #fdd9d9;
+}
+
+#mold-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-item {
+    flex-basis: calc(50% - 10px);
+    /* 50% width with some spacing between items */
+    margin-bottom: 10px;
+    /* Add vertical spacing between items */
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.info-value {
+    margin-left: 5px;
+    /* Add some spacing between label and value */
+}
+
+#cp-popup-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+}
+
+.sub-popup-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.specific-detail-topic-label {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 5px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px 0;
+}
+
+
+/* Config Part */
+
+.sub-config-container {
+    border: 3px solid #000;
+    border-radius: 5px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+}
+
+.config-oper-btn {
+    transition: transform 0.3s linear;
+    width: 20px;
+    height: 20px;
+}
+
+.config-oper-btn:hover {
+    transform: scale(1.3);
+}
+
+.config-edit-btn {
+    background-color: #eeee92;
+    /* Yellow shade background color */
+    background-image: url('../icon/edit_icon.png');
+    /* Edit icon image */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+
+.config-table {
+    table-layout: fixed;
+}
+
+.config-table th:first-child,
+.config-table td:first-child,
+.config-table th:nth-child(2),
+.config-table td:nth-child(2) {
+    min-width: fit-content;
+    width: 10ch;
+}
+
+/* Apply fixed width to the last column */
+.config-table th:last-child,
+.config-table td:last-child {
+    width: 15%;
+    min-width: fit-content;
+    text-align: center;
+}
+
+.config-table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.config-del-btn {
+    background-color: #f84c4c;
+    /* Red shade background color */
+    background-image: url('../icon/bin_icon.png');
+    /* Bin icon image */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.config-oper-btn-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.id-span {
+    font-weight: bold;
+}
+
+.input-field-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.input-ele-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    vertical-align: center;
+    margin: 3px 0;
+    align-items: center;
+}
+
+.ele-field-label {
+    font-weight: bold;
+    margin: auto 0;
+    vertical-align: center;
+}
+
+
+.element-name-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    flex: 1;
+}
+
+
+#config-popup-button-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.config-popup-confirm-btn {
+    background-color: #218224;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.config-popup-cancel-btn {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.config-popup-confirm-btn,
+.config-popup-cancel-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.input-field-cont input[type="text"],
+.input-field-cont select {
+    width: 100%;
+    /* Make input and select elements expand to fill their container */
+    padding: 8px;
+    /* Add padding for spacing and styling */
+    border: 1px solid #ccc;
+    /* Add a border for input and select elements */
+    border-radius: 3px;
+    /* Add rounded corners */
+    outline: none;
+    /* Remove default focus outline */
+}
+
+/* Style the select dropdown arrow */
+.input-field-cont select {
+    padding-right: 30px;
+    /* Add space for the icon */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+#config-popup-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#config-filer-input-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0 10px;
+    margin: 20px 0;
+}
+
+#config-filter-input {
+    width: 50%;
+    text-align: right;
+    font-size: 16px;
+    padding: 5px 3px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#add-new-config-btn,
+#cpset-config-add-new-btn {
+    width: 50px;
+    background-color: #185573;
+    color: #fff;
+    font-size: 24px;
+    border: 3px solid #042331;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#add-new-config-btn:hover {
+    transform: scale(1.1);
+    background-color: #042331;
+}
+
+.status-filter-cont {
+    flex-wrap: wrap;
+}
+
+/* CPset config  */
+#cpset-config-operation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 15px 10px;
+}
+
+#cpset-config-operation-bar select {
+    width: 40%;
+    text-align: center;
+    text-overflow: ellipsis;
+    max-width: 45%;
+    flex: 1;
+    
+}
+
+#cpset-config-operation-bar button {
+    justify-self: flex-end;
+
+}
+
+.cpset-operation-btn {
+    border: 2px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease !important;
+}
+
+.cpset-operation-btn:hover {
+    transform: scale(1.05);
+
+}
+
+#cpset-config-main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: opacity 1s ease-in;
+}
+
+.operation-div-btn-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px 10px;
+    gap:20px
+}
+
+#cpset-config-edit-btn {
+    background-color: #df9c4b;
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for button */
+}
+
+#cpset-config-del-btn {
+    background-color: #e23232;
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for button */
+}
+#cpset-detail-div,.popup-cpset-detail-div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    margin: 25px auto;
+    padding: 20px 10px;
+    box-shadow: 10px 5px 15px -3px rgba(146,129,129,0.85);
+-webkit-box-shadow: 10px 5px 15px -3px rgba(146,129,129,0.85);
+-moz-box-shadow: 10px 5px 15px -3px rgba(146,129,129,0.85);
+border: 2px solid #000;
+border-radius: 3px;
+}
+.cpset-config-general-detail-row {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+    
+
+}
+.cpset-config-general-detail-row div{
+    flex:1
+}
+
+.cpset-config-general-detail-row .cpset-config-detail-label-cont{
+    text-align: center;
+    font-size: 18px;
+}
+.cpset-config-general-detail-row .cp-name-cont{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* End CPset config */

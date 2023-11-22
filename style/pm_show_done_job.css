@@ -1,0 +1,462 @@
+#pg-container {
+    padding: 25px 50px 25px 50px;
+    background-color: #d7d7d7;
+}
+div {
+  overflow-x: auto;
+}
+.group-div {
+  border: 2px solid #333; /* Add a border */
+  background-color: #ffffff;
+  padding: 15px; /* Add padding for spacing */
+  margin-bottom: 20px; /* Add margin to separate the containers */
+  border-radius: 10px; /* Add rounded corners */
+}
+body {
+  font-size: 16px;
+}
+
+.header-label {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20pt;
+}
+
+  #header-cont {
+    margin: 40px auto;
+    align-items: stretch;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px; /* Reduce the gap between grid items */
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid #000; /* Add a border around the grid */
+}
+#job-id-grid { grid-area: 1 / 1 / 2 / 2;}
+#plan-name-grid { grid-area: 1 / 2 / 2 / 6; }
+#plan-code-grid { grid-area: 2 / 1 / 3 / 3; }
+#mc-number-grid { grid-area: 2 / 3 / 3 / 4; }
+#mc-name-grid { grid-area: 2 / 4 / 3 / 6; }
+#mc-locName-grid { grid-area: 3 / 1 / 4 / 3; }
+#edit-dateText-grid { grid-area: 3 / 3 / 4 / 4; }
+#edit-date-grid{ grid-area: 3 / 4 / 4 / 5; }
+#interval-grid{ grid-area: 3 / 5 / 4 / 6; }
+
+.grid-items {
+  /* Decorative */
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #000;
+  font-weight: bold;
+
+  /* Additional Styling */
+  color: #333; /* Text color */
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Make content stack vertically */
+  justify-content: space-between; /* Evenly distribute content vertically */
+  align-items: center;
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+#job-id-grid { background-color: #e0f6fd;}
+
+/* Hover effect */
+.grid-items:hover {
+    background-color: #ddd; /* Lighter background on hover */
+}
+
+/* Different background color for every other row */
+
+
+
+
+#pg-container ul {
+    list-style-type: none;
+    padding: 2px;
+    margin: 5px 0px 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    position: relative;
+
+}
+
+#pg-container li {
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #f5f5f5;
+    width: fit-content; 
+    margin: 0px 0px 10px auto;
+    font-weight: bold;
+}
+
+#pm-items-table{
+    text-align: center;
+    
+}
+#pm-items-table thead, #pm-items-table tbody{
+  text-align: center;
+  border: 2px solid black;
+}
+
+#added-parts-table thead, #added-parts-table tbody {
+  text-align: center;
+  border: 2px solid black;
+}
+
+
+
+.mark-items{
+    font-size: 12px;
+    vertical-align: middle;
+    width: 30px;
+}
+/* Style for the radio container */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px; /* Adjust the size of the radio button */
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Hide the default radio button */
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Style the custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px; /* Adjust the size of the radio button */
+    width: 25px; /* Adjust the size of the radio button */
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* Style the "Pass" radio button */
+  .radio-container .checkmark.pass::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Style the "Not Pass" radio button */
+  .radio-container .checkmark.notpass::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* When the radio button is checked, change the background color */
+  .radio-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* When the radio button is checked, display the checkmark icon */
+  .radio-container input:checked ~ .checkmark::after {
+    display: block;
+  }
+  
+  /* Position the checkmark icon */
+  .radio-container .checkmark::after {
+    top: 6px; /* Adjust the position of the checkmark icon */
+    left: 6px; /* Adjust the position of the checkmark icon */
+    width: 13px; /* Adjust the size of the checkmark icon */
+    height: 13px; /* Adjust the size of the checkmark icon */
+    border-radius: 50%;
+    background: white;
+  }
+  
+  /* Style when hovering over the radio container */
+  .radio-container:hover {
+    background-color: #f2f2f2;
+  }
+
+#req-confirm-but-container{
+  float: right;
+  margin-right: 2%;
+}
+#add-new-item-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.remove-custom-problem-but {
+  margin-left: 10px;
+  background-color: #ff1500;
+  color: #fff;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#job_done {
+  /* float: right; */
+  bottom: 20px;
+  margin: 0px 5px 5px 90%;
+  background-color: #409d18;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  }
+  
+  #job_done:hover {
+  background-color: #277e07;
+  }
+
+  #job_start {
+    /* float: right; */
+    bottom: 20px;
+    margin: 0px 5px 5px 90%;
+    background-color: #ffad33;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    }
+    
+    #job_start:hover {
+    background-color: #ba6605;
+    }
+
+  /* Style the table container */
+#problem-table-container {
+  margin: 20px;
+}
+
+/* Style the table */
+#problem-description-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style the table headers */
+#problem-description-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+/* Style the table rows */
+#problem-description-table tr {
+  border-bottom: 1px solid #ccc;
+}
+#problem-description-table {
+  border: 2px solid #000;
+}
+#problem-description-table td {
+  border: 1px solid #000;
+}
+/* Style the alternate row background color */
+/* #problem-description-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+} */
+
+/* Style the cells in the table */
+#problem-description-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the input fields */
+#problem-description-table input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* Style the custom problem row */
+.custom-problem {
+  background-color: #ffeecc; /* Customize the background color */
+}
+
+.not-pass-item {
+  background-color: #f5caca;
+}
+
+/* Style the "Add New Item" button row */
+.add-new-item-row {
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+/* Style the "Remove Custom Problem" button */
+
+/* Style the container for parts used */
+.parts-used-container {
+  padding: 20px;
+}
+
+/* Style the header for the parts used section */
+#confirm-req-container h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the "ยืนยันการเบิกอะไหล่" button */
+#Requist-confirm-but {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the container for MR code and status */
+#inital-mr-container {
+  margin-top: 10px;
+}
+
+/* Style the MR code */
+#mr-code {
+  font-weight: bold;
+}
+
+/* Style the MR status */
+#mr-status {
+  font-style: italic;
+}
+
+/* Style the added parts table */
+.part_req_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style the table headers */
+.part_req_table th {
+  background-color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+/* Style the table rows */
+.part_req_table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style the alternate row background color */
+.part_req_table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style the cells in the table */
+.part_req_table td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Style the input fields */
+.part_req_table input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.side-div-cont {
+  display: flex;
+  margin: 25px auto;
+  gap: 30px;
+
+}
+
+
+#information-item-cont {
+  width: 40%;
+  font-size: medium;
+  border-bottom: 2px solid #000;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info-label {
+  flex: 1;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.info-value {
+  flex: 1;
+  text-overflow: ellipsis;
+  /* Add any additional styles for your values */
+
+}
+
+#asg-eng-cont {
+  width: 60%;
+}
+#asg-eng-list {
+  width: 100%;
+  margin-top: 0px;
+}
+
+#asg-eng-list th, #asg-eng-list td {
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#asg-eng-list th {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+#asg-eng-list tr {
+  border: 1px solid #ccc;
+  border-bottom: 3px solid #000;
+}
+
+
+/* Style specific columns */
+#asg-eng-list th:nth-child(1),
+#asg-eng-list td:nth-child(1) {
+    width: 10%; /* Adjust the width as needed */
+}
+
+#asg-eng-list th:nth-child(2),
+#asg-eng-list td:nth-child(2) {
+    width: 65%; /* Adjust the width as needed */
+}
+
+#asg-eng-list th:nth-child(3),
+#asg-eng-list td:nth-child(3) {
+    width: 25% /* Adjust the width as needed */
+}

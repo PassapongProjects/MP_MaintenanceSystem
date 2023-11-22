@@ -1,0 +1,163 @@
+/* Apply styling to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the container */
+#pg-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't increase container's width */
+    position: relative;
+}
+
+/* Style the information container */
+#information-cont {
+    background-color: #ffffff;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+/* Style the user information */
+#user-info {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.table-label{
+    margin: 10px 10px 0px 10px;
+
+
+
+}
+#user-info label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style the Thai date label */
+#user-info label:last-child {
+    font-weight: normal;
+}
+
+/* Style the heading */
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table header */
+table thead th {
+    background-color: #f7f7f7;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style table body */
+table tbody td {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    color: #555;
+    text-align: center;
+    font-size: medium;
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* table tbody .specTD {
+    width: 250px;
+}
+table tbody .timeTD {
+    width: 80px;
+} */
+
+
+
+
+/* Style text inputs */
+input[type="text"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style action button */
+.confirm-issue-button, .confirm-return-button{
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect to action button */
+.confirm-issue-button:hover, .confirm-return-button:hover {
+    background-color: #0056b3;
+}
+/* Apply this style to the container that needs horizontal scrolling */
+#req-list-cont, #return-list-cont{
+    overflow-x:auto;
+    max-width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    /* white-space: nowrap; Prevent text wrapping */
+}
+
+/* Optional: Style for the scrollbar */
+#req-list-cont::-webkit-scrollbar,#return-list-cont::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+}
+
+#req-list-cont::-webkit-scrollbar-thumb,#return-list-cont::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#req-list-cont::-webkit-scrollbar-thumb:hover,#return-list-cont::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the thumb on hover */
+}
+
+#req-list-cont::-webkit-scrollbar-track,#return-list-cont::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1; /* Color of the track */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #pg-container {
+        padding: 10px;
+    }
+    #information-cont, #req-list-cont {
+        padding: 10px;
+    }
+    #user-info {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,255 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    background-color: #005078;
+    padding: 0 20px;
+
+}
+.menu .user-information {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80%;
+    align-content: center;
+    gap: 3ch;
+}
+
+.menu .user-information span {
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 20px;
+
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    align-self: center;
+    height: 50px;
+    list-style: none;
+}
+.menu li {
+    margin: auto 0;
+    width: fit-content;
+    height: fit-content;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+    display: inline-block;
+}
+.menu li a {
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.45s;
+    padding: 5px;
+}
+.menu li:hover {
+    transform: scale(1.2);
+    animation: line 1s;
+}
+.menu li:hover a {
+    color: #d94f5c;
+}
+.menu li:not(:last-child) {
+    margin-right: 30px;
+}
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+   }
+}
+
+
+/* Styles for the main menu container */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+#pg-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #003c6d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #f7f7f7;
+    width: 100%;
+    flex: 1;
+}
+
+.section-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    width: 100%;
+
+}
+
+.section-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 35px;
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.section-label {
+
+    display: block;
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003c6d;
+    border: 3px solid #000;
+
+}
+
+/* Styles for individual menu items (cards) */
+.menu-item {
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item.forbidden-operaion {
+
+    background-color: #d94f5c;
+    border-color: #c70216;
+
+}
+/* Styles for the menu item image */
+.menu-img {
+    align-self: center;
+    width: 90%;
+    height: 60%;
+    /* background-image: url('your-image-url.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styles for the menu item label */
+.menu-item-label {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 2ch;
+    font-weight: bold;
+    color: #000000; /* Blue text color */
+    background-color: #eafbff; /* Light gray background color */
+    border: 2px solid #888888; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s ease-in-out, color 0.3s;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+
+    
+}
+
+.menu-item-label:hover {
+    background-color: #003b7a; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+     /* Reduce font size when text overflows */
+}
+
+/* Customize text appearance */
+.menu-item-label h3 {
+    font-size: 20px;
+
+}
+
+.menu-item-label p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Example hover effect for the menu item */
+.menu-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: #74b72e;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+

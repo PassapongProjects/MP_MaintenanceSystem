@@ -1,0 +1,105 @@
+#filter-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+#eng-filter-cont {
+    justify-self: end
+}
+#eng-filter-cont button{
+    background-color: #f8f9fa; /* Light gray */
+    color: #000; /* Black text */
+}
+#eng-filter-cont button.active {
+    background-color: #545b62; /* Blue */
+    color: #fff; /* White text */
+    border-color: #4e555b;
+}
+
+#eng-filter-cont button:hover {
+    background-color: #5e6368; /* Blue */
+    color: #fff; /* White text */
+    border-color: #4e555b;
+}
+.card-text.topic-label {
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+}
+ /* Add custom CSS for the status filter bar */
+ .status-filter-btn,.eng-filter-btn {
+    background-color: #f8f9fa; /* Light gray */
+    color: #000; /* Black text */
+}
+
+.status-filter-btn.active,.eng-filter-btn.active {
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White text */
+}
+.status-pending {
+color: orange;
+}
+
+.status-processing {
+color: blue;
+}
+
+.status-done {
+color: green;
+}
+.alert {
+padding: 20px;
+background-color: #74b72e;
+color: white;
+}
+
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.closebtn:hover {
+color: black;
+}
+
+.card{
+    border: 2px solid #333;
+}
+.pm-card {
+background-color: #fffaec;
+}
+.fix-card {
+    background-color: #fff2ec;
+}
+#user-info {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 35px;
+}
+.table-label{
+    margin: 10px 10px 0px 10px;
+
+
+
+}
+#user-info label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style the Thai date label */
+#user-info label:last-child {
+    font-weight: normal;
+}

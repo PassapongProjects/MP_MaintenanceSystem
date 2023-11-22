@@ -1,0 +1,153 @@
+#pg-cont * {
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+#pg-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    margin: 15px 0;
+}
+/* Define styles for elements with the class "selector" */
+.selector {
+    background-color: #f1ecec; /* Background color */
+    color: #0b0b0b; /* Text color */
+    font-size: 14px; /* Font size */
+    padding: 5px; /* Padding */
+    border: 2px solid #050506; /* Border */
+    border-radius: 5px; /* Border radius */
+    text-align: center; /* Text alignment */
+  }
+
+  .download-btn {
+    background-color: #f1ecec; /* Background color */
+    color: #0b0b0b; /* Text color */
+    font-size: 14px; /* Font size */
+    padding: 5px 10px; /* Padding */
+    border: 2px solid #050506; /* Border */
+    border-radius: 5px; /* Border radius */
+    text-align: center; /* Text alignment */
+  }
+
+  
+.section {
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 2px 3px;
+    padding: 5px;
+}
+.filter-bar {
+    width: 100%;
+    background-color: #7dc5ad7c;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 5px;
+    border: 2px solid #507f4f;
+    border-radius: 3px;
+}
+
+/* Top Section */
+.t-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#mainchart-cont {
+    width: 100%;
+    height: 500px;
+    
+}
+
+#mainchart-element {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/* Middle Section */
+.m-section {
+display: flex;
+flex-direction: column;
+
+}
+.side-element-cont {
+    display: flex;
+    flex-direction: row;
+
+}
+.element-cont {
+    width: 100%;
+    margin: 25px 0;
+}
+
+/* Order-Table Section */
+.group-table-label {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 50%;
+    margin: 25px 15px;
+}
+.table-label{
+   width: fit-content;
+   height: fit-content;
+   margin: 0 auto;
+   padding: 0;
+   display: inline;
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: underline;
+   white-space: break-spaces;
+}
+
+.order-table-element-cont {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.order-table {
+    width: 100%; /* Make the table fill its container width */
+    table-layout: fixed;
+    text-align: center;
+    margin: 3px 0;
+  }
+  
+  /* Style the table header */
+  .order-table th {
+    background-color: #f2f2f2; /* Grey background color */
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0; /* Round the top corners */
+    height: 75px;
+  }
+  
+  /* Style the table body */
+ 
+  .table-text-scroll {
+    white-space: nowrap;
+    overflow: scroll;
+  }
+  /* Style table cells (columns) */
+  .order-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+  }
+  
+  /* Set fixed column widths */
+  .order-table th:nth-child(1) {
+    width: 10%;
+  }
+  
+  .order-table th:nth-child(2) {
+    width: 65%;
+  }
+  
+  .order-table th:nth-child(3) {
+    width: 25%;
+  }
+  
+/*  */

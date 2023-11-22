@@ -1,0 +1,319 @@
+#report-detail-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+
+#detail-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-top: 10px;
+    width: 50%;
+    font-size: 16px;
+    max-height: 700px;
+    overflow: scroll;
+
+}
+
+#report-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-top: 10px;
+    width: 50%;
+    max-height: 700px;
+    overflow: scroll;
+
+}
+
+#job-detail-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#detail-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#detail-container span {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#after-option-selected-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-container {
+    max-height: 400px;
+    /* Set the maximum height for the container */
+    overflow-y: scroll;
+    /* Add vertical scroll bar when content exceeds container height */
+    border: 1px solid #ccc;
+    /* Add a border for visual separation */
+}
+
+
+/* Styling for the filter container */
+#filter-container {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    /* Limit the width for better readability */
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+/* Styling for the form elements */
+.form-group {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.form-check {
+    margin-left: 15px;
+    display: inline;
+}
+
+.form-control {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Styling for the radio buttons */
+.form-check-input {
+    margin-right: 5px;
+}
+
+.filter-date-container {
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the report container */
+#report-container {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style for the report items */
+.report-item {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 18px;
+}
+
+/* Style for the topics on the left side */
+.report-item .topic {
+    /* flex: 1; */
+    font-weight: bold;
+    text-align: right;
+    width: 60%;
+}
+
+/* Style for the values on the right side */
+.report-item .value {
+    width: 40%;
+    text-align: left;
+}
+
+.table.job-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    /* Add round corners */
+    overflow: hidden;
+    /* Hide overflowing content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    margin-bottom: 0;
+}
+
+/* Style the table header */
+.table.job-table thead {
+    background-color: #f5f5f5;
+    /* Light gray background color */
+    font-weight: bold;
+}
+
+/* Style the table header cells */
+.table.job-table th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    /* Add a bottom border */
+}
+
+/* Style the table body rows */
+.table.job-table tbody tr {
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Style the table body cells */
+.table.job-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    /* Add a bottom border */
+}
+
+/* Add hover effect for table rows */
+.table.job-table tbody tr:hover {
+    background-color: #f0f0f0;
+    /* Light gray background color on hover */
+}
+
+/* Style the detail button */
+.goto-table-but {
+    background-color: #007bff;
+    /* Blue background color for the button */
+    color: #fff;
+    /* White text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* Add round corners to the button */
+    cursor: pointer;
+}
+
+/* Adjust button appearance on hover */
+.goto-table-but:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.header-label-cont {
+    margin: 5px 0;
+}
+
+.done-job-cont {
+    margin: 15px auto;
+}
+
+.done-job-cont label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#between-date-text {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#part_usage_figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+#part_usage_figure_cont {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 500px;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.log-table-cont {
+    width: 100%;    
+    height: 100%;
+    overflow: scroll;
+   
+
+
+}
+
+.log-table {
+    width: 100%;
+    /* Take 100% width */
+    border-collapse: collapse;
+    /* Collapse borders to remove spacing */
+    border-spacing: 0;
+    /* Remove spacing between cells */
+    font-size: 12px;
+    /* Set font size for the table body */
+    border: 2px solid #000;
+    border-radius: 3px;
+
+}
+
+/* Apply styles to table header */
+.log-table th {
+    background-color: #dedede;
+    /* Header background color */
+    position: sticky;
+    top: 0;
+    /* Make the header stick to the top when scrolling */
+    z-index: 1;
+    /* Place header above other elements */
+    font-weight: bold;
+    /* Bold header text */
+    padding: 8px;
+    /* Add padding to header cells */
+    text-align: left;
+    /* Left-align header text */
+    font-size: 14px;
+}
+
+/* Apply styles to table body */
+.log-table td {
+    padding: 8px;
+    /* Add padding to body cells */
+    border-bottom: 1px solid #ddd;
+    /* Add bottom border to separate rows */
+}
+
+/* Apply alternate row background color */
+.log-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Apply hover effect on rows */
+.log-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+.log-table td:last-child {
+    font-size: 12px;
+}
+
+.report-label {
+    width: 100%;
+    margin: 15px auto;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}

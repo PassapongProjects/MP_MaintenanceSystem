@@ -1,0 +1,100 @@
+h3 {
+    font-size: 30px;
+    font-weight: bold; /* Set the font weight to bold */
+    color: #333; /* Set the text color */
+    margin: 10px 0px 10px 10px; /* Add some space below the heading */
+  }
+  
+/* Styling for the user info container */
+#user-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Styling for user info labels */
+#user-info label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #333;
+}
+
+/* Styling for the date label */
+#user-info label:last-child {
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Styling for the table */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Styling for operation buttons */
+.operation-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.operation-button:hover {
+    background-color: #0056b3;
+}
+
+#req-list-cont {
+    max-height: 400px; /* Adjust the max height as needed */
+    overflow-y: auto; /* Hide overflow from the container */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    position: relative;
+}
+
+/* Optional: If you want to ensure table headers are always visible */
+#req-list-cont table {
+    margin-bottom: 0; /* Remove default table margin */
+}
+
+
+
+/* Responsive styling for the user info container */
+@media (max-width: 768px) {
+    #user-info {
+        margin-bottom: 10px;
+        
+    }
+
+    #user-info label {
+        font-size: 24px;
+    }
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}
